@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# the root window should have this color
+xsetroot -solid "#000000" -cursor_name left_ptr
+
+IMAGEFILE="/etc/X11/xdm/arch-xdm/archblack.png"
+
+# try different methods to set the background
+if which display >> /dev/null 2>&1; then
+        # imagemagick detected
+	display -window root ${IMAGEFILE};
+elif which feh >> /dev/null 2>&1; then
+	# feh detected
+	feh --bg-scale ${IMAGEFILE};
+elif which xsetbg >> /dev/null 2>&1; then
+	# xloadimage detected
+	xsetbg -onroot -fullscreen ${IMAGEFILE};
+fi
+
+/etc/X11/xdm/arch-xdm/buttons -geometry -0-0 &
+
+xclock -bg black -fg white &
