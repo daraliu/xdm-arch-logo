@@ -30,7 +30,7 @@ elif which feh >> /dev/null 2>&1; then
 	# feh detected
         # feh gives error if $HOME isn't set, so...
 	HOME=/root feh --bg-center ${IMAGEFILE};
-elif which xsetbg >> /dev/null 2>&1; then
+elif which xv >> /dev/null 2>&1; then
         # xv detected
         # xv spits out an error when using -quit, but it still does the job, so...
         xv -root -quit -rmode 5 ${IMAGEFILE} >> /dev/null 2>&1
