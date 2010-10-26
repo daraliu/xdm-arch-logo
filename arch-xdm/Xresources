@@ -1,13 +1,3 @@
-#if ( WIDTH == 1980 )
-# define LOGIN_POS_X 850
-#elif ( WIDTH == 1280 )
-# define LOGIN_POS_X 440
-#elif ( WIDTH == 1024 )
-# define LOGIN_POS_X 312
-#elif ( WIDTH == 800 )
-# define LOGIN_POS_X 250
-#endif
-
 #if ( HEIGHT == 1080 )
 # define LOGIN_POS_Y 740
 #elif ( HEIGHT == 1024 )
@@ -36,7 +26,6 @@ xlogin.Login.promptColor:	#4d4d4d
 xlogin.Login.failColor:		red
 xlogin.Login.width:		400
 xlogin.Login.height:		150
-xlogin.Login.x:			LOGIN_POS_X
 xlogin.Login.y:			LOGIN_POS_Y
 xlogin.Login.borderWidth:	0
 xlogin.Login.foreground:	#1793d1
