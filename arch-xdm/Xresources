@@ -4,6 +4,8 @@
 # define LOGIN_POS_Y 635
 #elif ( HEIGHT == 800 )
 # define LOGIN_POS_Y 550
+#elif ( HEIGHT == 768 )
+# define LOGIN_POS_Y 520
 #elif ( HEIGHT == 600 )
 # define LOGIN_POS_Y 400
 #elif ( HEIGHT == 480 )
