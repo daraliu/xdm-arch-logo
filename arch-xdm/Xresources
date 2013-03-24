@@ -29,7 +29,7 @@ xlogin.Login.greetColor:	#4d4d4d
 xlogin.Login.promptColor:	#4d4d4d
 xlogin.Login.failColor:		red
 xlogin.Login.width:		400
-xlogin.Login.height:		150
+xlogin.Login.height:		170
 xlogin.Login.y:			LOGIN_POS_Y
 xlogin.Login.borderWidth:	0
 xlogin.Login.foreground:	#1793d1
