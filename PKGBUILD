@@ -9,6 +9,7 @@ pkgver=0.1
 pkgrel=1
 pkgdesc="An Arch Linux logo theme for xdm, with systemd support"
 arch=("any")
+url="https://github.com/jwm-art-net/xdm-arch-logo/"
 license="GPL"
 depends=("xorg-xdm" "xorg-xrandr" "xorg-xclock" "xorg-xwininfo" "xorg-xsetroot" "xorg-xkill" "librsvg")
 makedepends=("tar" "gzip")
