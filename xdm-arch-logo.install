@@ -2,7 +2,8 @@ post_install()
 {
     echo -e "
         IF using systemd, simply:
-            systemctl enable xdm-arch-logo
+            sudo rm /etc/systemd/system/display-manager.service 
+            sudo systemctl enable xdm-arch-logo
 
         Otherwise start xdm using the -config parameter:
             xdm -config /etc/X11/xdm/xdm-arch-logo/xdm-config

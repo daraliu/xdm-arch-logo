@@ -29,9 +29,10 @@ source=(Xreset
 
 md5sums=('c9490faaa2c1b4f103f1a52aa9c3f102'
          'f598b90eb9e87b3f69b7c76e23241e9d'
+         '46e269721fa888b14d681d0c76d39e30'
          '9ece51fe4063145979c6005fa1c1829e'
          'f9800662954fe3a641f233d5f5fce14b'
-         'eef068300408e32d9ac51e4d332b16cc'
+         '5157d43ab41b7843fc6821e8b863d7e8'
          '9dcca1e8d6ad7402759e90835946d52b'
          '07f9f67351411646c9291f54817b7011'
          'abc1cc75e716e05a7405071d79dfdf8c')
@@ -39,7 +40,7 @@ md5sums=('c9490faaa2c1b4f103f1a52aa9c3f102'
 install=${pkgname}.install
 package() {
   mkdir -p $pkgdir/etc/X11/xdm/${pkgname}
-  cp arch.xpm buttons xdm-config Xresources Xsetup Xstartup Archlinux-official-fullcolour.svg $pkgdir/etc/X11/xdm/${pkgname}
+  cp buttons xdm-config Xresources Xsetup Xstartup Archlinux-official-fullcolour.svg $pkgdir/etc/X11/xdm/${pkgname}
   chmod 0755 $pkgdir/etc/X11/xdm/${pkgname}/{Xsetup,Xstartup,buttons}
   install -Dm0644 $srcdir/${pkgname}.service $pkgdir/usr/lib/systemd/system/${pkgname}.service
 }
